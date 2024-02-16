@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.title{
+    width: 6ch;
+    background-image: linear-gradient(to right, #8e9eab, #eef2f3);
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid cornflowerblue;
+    animation: flashing-border 0.75s step-start infinite, print-text 1s steps(6), gradient-text 10s ease infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: -105px;
+    margin-left: 400px;
+}
+
+.new{
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+    margin-right: 400px;
+}
+
+a { 
+    text-decoration: none; 
+    color: antiquewhite;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: x-large;
+
+   } 
+
+.thinkless{
+    display: flex;
+    justify-content: center;
+    margin-top: 700px;
+    margin-bottom: 450px;
+}
+
+.skills {
+    width: 13ch;
+    color: antiquewhite;
+    font-size: xx-large;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+@keyframes flashing-border {
+  0%{
+    border-color: cornflowerblue;
+  }    
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: cornflowerblue;
+  }
+}
+
+@keyframes print-text {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes gradient-text {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@keyframes smooth {
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: antiquewhite;
+    }
+}
